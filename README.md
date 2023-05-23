@@ -1,15 +1,24 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1AzP33O8rnMW__7ocWJhVBXjKziJXPtim?usp=sharing)
 <a href="https://huggingface.co/camel-ai"><img src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo-with-title.png" alt="Hugging Face" width="100"/></a>
-# CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society
+
+
+# CAMEL: 用于大规模语言模型社区的‘思维’探索 的可交互智能体
+
+这个项目是李鲁鲁对 CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society 的翻译。
+
+包括注释、介绍和prompt，以及增加了李鲁鲁的Comments。
+
+因为CAMEL实际上是一个AutoGPT的实现方案之一，虽然在中文社区被提到的次数不多，但是仍然有学习的价值
+
+另外 CAMEL实际上也和我们的[骆驼项目](https://github.com/LC1332/Luotuo-Chinese-LLM)某种意义上同名，非常有缘分。
 
 ## [[Project Website]](https://www.camel-ai.org/) [[Preprint]](https://ghli.org/camel.pdf)
 
-<p align="center">
-  <img src='./misc/logo.png' width=800>
-</p>
+## 概览
 
-## Overview
-The rapid advancement of conversational and chat-based language models has led to remarkable progress in complex task-solving. However, their success heavily relies on human input to guide the conversation, which can be challenging and time-consuming. This paper explores the potential of building scalable techniques to facilitate autonomous cooperation among communicative agents and provide insight into their "cognitive" processes. To address the challenges of achieving autonomous cooperation, we propose a novel communicative agent framework named *role-playing*. Our approach involves using *inception prompting* to guide chat agents toward task completion while maintaining consistency with human intentions. We showcase how role-playing can be used to generate conversational data for studying the behaviors and capabilities of chat agents, providing a valuable resource for investigating conversational language models. Our contributions include introducing a novel communicative agent framework, offering a scalable approach for studying the cooperative behaviors and capabilities of multi-agent systems, and open-sourcing our library to support research on communicative agents and beyond. The GitHub repository of this project is made publicly available on: https://github.com/lightaime/camel.
+对话式和聊天式语言模型的快速发展已经在复杂任务解决方面取得了显著进展。然而，它们的成功严重依赖于人类输入以指导对话，这可能很具有挑战性和耗时。本文探讨了构建可扩展的技术来促进交互代理人的自主合作并深入了解其“认知”过程的潜力。为了解决实现自主合作的挑战，我们提出了一种名为角色扮演的新型交互代理人框架。我们的方法是使用启示式提示来引导聊天代理人完成任务并保持与人类意图的一致性。我们展示了角色扮演如何用于生成对话数据以研究聊天代理人的行为和能力，为研究对话式语言模型提供了有价值的资源。我们的贡献包括引入一种新颖的交互代理人框架，提供了一种可扩展的研究多代理系统合作行为和能力的方法，并开源了我们的库以支持交互代理人及其他领域的研究。此项目的GitHub存储库已公开在以下网址: https://github.com/lightaime/camel。
+
+李鲁鲁的中文翻译: https://github.com/LC1332/Chinese-Camel
 
 ## Try it yourself
 We provide a [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1AzP33O8rnMW__7ocWJhVBXjKziJXPtim?usp=sharing) demo showcasing a conversation between two ChatGPT agents playing roles as a python programmer and a stock trader collaborating on developing a trading bot for stock market.
