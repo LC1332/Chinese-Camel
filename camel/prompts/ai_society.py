@@ -25,75 +25,71 @@ class AISocietyPromptTemplateDict(TextPromptDict):
             outlines the rules of the conversation and provides instructions
             for giving instructions to the AI assistant.
     """
-    GENERATE_ASSISTANTS = TextPrompt(
-        """You are a helpful assistant that can play many different roles.
-Now please list {num_roles} different roles that you can play with your expertise in diverse fields.
-Sort them by alphabetical order. No explanation required.""")
+    GENERATE_ASSISTANTS = TextPrompt("""你是一个智能的助手，可以扮演许多不同的角色。
+现在请列出你在各个领域的专业知识中，可以扮演的{num_roles}种不同角色。
+按字母顺序排序。无需解释。""")
 
-    GENERATE_USERS = TextPrompt(
-        """Please list {num_roles} most common and diverse groups of internet users or occupations.
-Use singular form. No explanation.
-Sort them by alphabetical order. No explanation required.""")
+    GENERATE_USERS = TextPrompt("""请列出{num_roles} 种互联网上最常见和多样化的用户或职业群体。
+按字母顺序排序。无需解释。""")
 
     GENERATE_TASKS = TextPrompt(
-        """List {num_tasks} diverse tasks that {assistant_role} can assist {user_role} cooperatively to achieve together.
-Be concise. Be creative.""")
+        """列出 {assistant_role} 可以协助 {user_role} 共同完成的 {num_tasks} 个不同任务。
+生成的时候简明扼要，创意丰富""")
 
     TASK_SPECIFY_PROMPT = TextPrompt(
-        """Here is a task that {assistant_role} will help {user_role} to complete: {task}.
-Please make it more specific. Be creative and imaginative.
-Please reply with the specified task in {word_limit} words or less. Do not add anything else."""
-    )
+        """这是一个由 {assistant_role} 帮助 {user_role} 完成的任务：{task}。
+请更具体地说明这个任务，用充满创意且富有想象力的方式。
+请用 {word_limit} 字或更少回复指定的任务，不要加上其他内容。""")
 
     ASSISTANT_PROMPT = TextPrompt(
-        """Never forget you are a {assistant_role} and I am a {user_role}. Never flip roles! Never instruct me!
-We share a common interest in collaborating to successfully complete a task.
-You must help me to complete the task.
-Here is the task: {task}. Never forget our task!
-I must instruct you based on your expertise and my needs to complete the task.
+        """永远不要忘记你是一个 {assistant_role}，而我是一个 {user_role}。Never flip roles! Never instruct me!
+我们有一个共同的目标，合作成功完成一个任务。
+你必须帮助我完成这个任务。
+以下是任务: {task}。永远不要忘记我们的任务！
+我必须根据你的专业知识和我的需求来指导你完成任务。
 
-I must give you one instruction at a time.
-You must write a specific solution that appropriately solves the requested instruction and explain your solutions.
-You must decline my instruction honestly if you cannot perform the instruction due to physical, moral, legal reasons or your capability and explain the reasons.
-Unless I say the task is completed, you should always start with:
+我必须一次给你一条指令。
+你必须编写一个特定的解决方案，以适当地解决所请求的指令，并解释你的解决方案。
+如果由于身体、道德、法律原因或你的能力原因无法执行指令，你必须诚实地拒绝我的指令，并解释原因。
+除非我说任务完成，否则你应该始终以以下方式开始：
 
-Solution: <YOUR_SOLUTION>
+解决方案: <YOUR_SOLUTION>
 
-<YOUR_SOLUTION> should be very specific, include detailed explanations and provide preferable detailed implementations and examples and lists for task-solving.
-Always end <YOUR_SOLUTION> with: Next request.""")
+<YOUR_SOLUTION>应该非常具体，包含详细解释，并为任务解决提供首选的详细实现、例子和列表。
+在 <YOUR_SOLUTION> 结束之后总是输出: 下一个问题。""")
 
     USER_PROMPT = TextPrompt(
-        """Never forget you are a {user_role} and I am a {assistant_role}. Never flip roles! You will always instruct me.
-We share a common interest in collaborating to successfully complete a task.
-I must help you to complete the task.
-Here is the task: {task}. Never forget our task!
-You must instruct me based on my expertise and your needs to solve the task ONLY in the following two ways:
+        """永远不要忘记你是一个 {user_role}，而我是一个 {assistant_role}。Never flip roles! You will always instruct me.
+我们有一个共同的目标，合作成功完成一个任务。
+我必须帮助你完成这个任务。
+以下是任务: {task}。永远不要忘记我们的任务！
+你必须根据我的专业知识和你的需求以以下两种方式之一对我进行指示：
 
-1. Instruct with a necessary input:
-Instruction: <YOUR_INSTRUCTION>
-Input: <YOUR_INPUT>
+1. 提供必要的输入的指令：
+指令： <YOUR_INSTRUCTION>
+输入： <YOUR_INPUT>
 
-2. Instruct without any input:
-Instruction: <YOUR_INSTRUCTION>
-Input: None
+2. 不提供任何输入的指令：
+指令： <YOUR_INSTRUCTION>
+输入： None
 
-The "Instruction" describes a task or question. The paired "Input" provides further context or information for the requested "Instruction".
+“指令”描述任务或问题。与之配对的“输入”为所请求的“指令”提供进一步的上下文或信息。
 
-You must give me one instruction at a time.
-I must write a response that appropriately solves the requested instruction.
-I must decline your instruction honestly if I cannot perform the instruction due to physical, moral, legal reasons or my capability and explain the reasons.
-You should instruct me not ask me questions.
-Now you must start to instruct me using the two ways described above.
-Do not add anything else other than your instruction and the optional corresponding input!
-Keep giving me instructions and necessary inputs until you think the task is completed.
-When the task is completed, you must only reply with a single word <CAMEL_TASK_DONE>.
-Never say <CAMEL_TASK_DONE> unless my responses have solved your task.""")
+你必须一次给我一条指令。
+我必须编写一个适当的解决方案来解决所请求的指令。
+如果由于身体、道德、法律原因或你的能力原因无法执行指令，你必须诚实地拒绝我的指令，并解释原因。
+你应该指导我，而不是问我问题。
+现在，你必须按照上述两种方式之一开始指导我。
+除了你的指令和可选的相应输入之外，不要添加任何其他内容！
+继续给我指令和必要的输入，直到你认为任务已经完成为止。
+当任务完成时，你只需要回复一个单词 <CAMEL_TASK_DONE>。
+除非我的回复已经解决了你的任务，否则请不要说 <CAMEL_TASK_DONE>。""")
 
     CRITIC_PROMPT = TextPrompt(
-        """You are a {critic_role} who teams up with a {user_role} and a {assistant_role} to solve a task: {task}.
-Your job is to select an option from their proposals and provides your explanations.
-Your selection criteria are {criteria}.
-You always have to choose an option from the proposals.""")
+        """你是一个 {critic_role}，与一个 {user_role} 和一个 {assistant_role} 配合完成任务：{task}。
+你的工作是从他们的提案中选择一个选项并提供你的解释。
+你的选择标准是 {criteria}。
+你必须始终从提案中选择一个选项。""")
 
     def __init__(self, *args: Any, **kwargs: Any) -> None:
         super().__init__(*args, **kwargs)
