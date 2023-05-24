@@ -24,16 +24,18 @@
 
 我们提供了一个Demo [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1AzP33O8rnMW__7ocWJhVBXjKziJXPtim?usp=sharing) ，展示了两个ChatGPT代理人在扮演Python程序员和股票交易员角色之间进行交流，合作开发一款股票交易机器人的过程。
 
-李鲁鲁: 这里Sam Witteveen提供了另一个Demo  [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1BuudlvBrKBl1bNhMp-aB5uOW62-JlrSY?usp=sharing) 这个Demo是不依赖Camel的原项目的，从原理角度会更清晰，我会对这个进行一下翻译。
-
-
 <p align="center">
   <img src='./misc/framework.png' width=800>
 </p>
 
-## Documentation
 
-[CAMEL package documentation pages](https://lightaime.github.io/camel/camel.html)
+李鲁鲁: 这里Sam Witteveen提供了另一个Demo  [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1BuudlvBrKBl1bNhMp-aB5uOW62-JlrSY?usp=sharing) 这个Demo是不依赖Camel的原项目的，从原理角度会更清晰，我会对这个进行一下翻译。
+
+## 文档
+
+[CAMEL package documentation pages(英文)](https://lightaime.github.io/camel/camel.html)
+
+李鲁鲁: 作者的封装还是很完整的。
 
 ## Environment Setup
 Install `CAMEL` from source with conda:
