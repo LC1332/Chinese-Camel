@@ -2,7 +2,7 @@
 <a href="https://huggingface.co/camel-ai"><img src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo-with-title.png" alt="Hugging Face" width="100"/></a>
 
 
-# CAMEL: 用于大规模语言模型社区的‘思维’探索 的可交互智能体
+# CAMEL: 用于大语言模型社区‘思维’探索的可交互智能体
 
 这个项目是李鲁鲁对 CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society 的翻译。
 
@@ -12,7 +12,7 @@
 
 另外 CAMEL实际上也和我们的[骆驼项目](https://github.com/LC1332/Luotuo-Chinese-LLM)某种意义上同名，非常有缘分。
 
-## [[Project Website]](https://www.camel-ai.org/) [[Preprint]](https://ghli.org/camel.pdf)
+## [[项目主页(英语)]](https://www.camel-ai.org/) [[项目论文(英语)]](https://ghli.org/camel.pdf)
 
 ## 概览
 
@@ -20,8 +20,12 @@
 
 李鲁鲁的中文翻译: https://github.com/LC1332/Chinese-Camel
 
-## Try it yourself
-We provide a [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1AzP33O8rnMW__7ocWJhVBXjKziJXPtim?usp=sharing) demo showcasing a conversation between two ChatGPT agents playing roles as a python programmer and a stock trader collaborating on developing a trading bot for stock market.
+## 快速上手
+
+我们提供了一个Demo [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1AzP33O8rnMW__7ocWJhVBXjKziJXPtim?usp=sharing) ，展示了两个ChatGPT代理人在扮演Python程序员和股票交易员角色之间进行交流，合作开发一款股票交易机器人的过程。
+
+李鲁鲁: 这里Sam Witteveen提供了另一个Demo  [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1BuudlvBrKBl1bNhMp-aB5uOW62-JlrSY?usp=sharing) 这个Demo是不依赖Camel的原项目的，从原理角度会更清晰，我会对这个进行一下翻译。
+
 
 <p align="center">
   <img src='./misc/framework.png' width=800>
