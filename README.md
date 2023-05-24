@@ -4,7 +4,7 @@
 
 # CAMEL: 用于大语言模型社区‘思维’探索的可交互智能体
 
-这个项目是李鲁鲁对 CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society 的翻译。
+Chinese-Camel是李鲁鲁对 CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society 的翻译。
 
 包括注释、介绍和prompt，以及增加了李鲁鲁的Comments。
 
