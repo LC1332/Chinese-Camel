@@ -22,6 +22,8 @@ Chinese-Camel是李鲁鲁对 CAMEL: Communicative Agents for “Mind” Explorat
 
 ## 快速上手
 
+李鲁鲁: 这里Sam Witteveen提供了另一个Demo，我已经完成了翻译。  [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LC1332/Chinese-Camel/blob/master/notebook/Translated_Sam_Demo.ipynb) 这个Demo是不依赖Camel的原项目的，从原理角度会更清晰。
+
 我们提供了一个Demo [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1AzP33O8rnMW__7ocWJhVBXjKziJXPtim?usp=sharing) ，展示了两个ChatGPT代理人在扮演Python程序员和股票交易员角色之间进行交流，合作开发一款股票交易机器人的过程。
 
 <p align="center">
@@ -29,7 +31,7 @@ Chinese-Camel是李鲁鲁对 CAMEL: Communicative Agents for “Mind” Explorat
 </p>
 
 
-李鲁鲁: 这里Sam Witteveen提供了另一个Demo  [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1BuudlvBrKBl1bNhMp-aB5uOW62-JlrSY?usp=sharing) 这个Demo是不依赖Camel的原项目的，从原理角度会更清晰，我会对这个进行一下翻译。
+
 
 ## 文档
 
