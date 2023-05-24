@@ -1,4 +1,4 @@
-[![翻译后的Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LC1332/Chinese-Camel/blob/master/notebook/camel_demo.ipynb)
+(翻译的Colab) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LC1332/Chinese-Camel/blob/master/notebook/camel_demo.ipynb)
 <a href="https://huggingface.co/camel-ai"><img src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo-with-title.png" alt="Hugging Face" width="100"/></a>
 
 
