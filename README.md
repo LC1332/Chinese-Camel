@@ -1,4 +1,4 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1AzP33O8rnMW__7ocWJhVBXjKziJXPtim?usp=sharing)
+[![翻译后的Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LC1332/Chinese-Camel/blob/master/notebook/camel_demo.ipynb)
 <a href="https://huggingface.co/camel-ai"><img src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo-with-title.png" alt="Hugging Face" width="100"/></a>
 
 
@@ -46,21 +46,8 @@ https://github.com/LC1332/Chinese-Camel/assets/5266090/8b39c4ba-3cfd-4575-9ae7-4
 
 李鲁鲁: 作者的封装还是很完整的。
 
-## Environment Setup
-Install `CAMEL` from source with conda:
-```
-# create a conda virtual environment
-conda create --name camel python=3.10
-# activate camel conda environment
-conda activate camel
-# clone github repo
-git clone -b v0.1.0 https://github.com/lightaime/camel.git
-# change directory into project directory
-cd camel
-# install camel from source
-pre-commit install
-pip install -e .
-```
+
+
 ## Example
 You can find a list of tasks for different set of assistant and user role pairs [here](https://drive.google.com/file/d/194PPaSTBR07m-PzjS-Ty6KlPLdFIPQDd/view?usp=share_link)
 
@@ -119,3 +106,21 @@ The datasets are licensed under CC BY NC 4.0, which permits only non-commercial 
 
 ## Contact
 For more information please contact [Guohao Li](https://ghli.org/), [Hasan Abed Al Kader Hammoud](https://cemse.kaust.edu.sa/ece/people/person/hasan-abed-al-kader-hammoud), [Hani Itani](https://github.com/HaniItani).
+
+---
+
+## Environment Setup
+Install `CAMEL` from source with conda:
+```
+# create a conda virtual environment
+conda create --name camel python=3.10
+# activate camel conda environment
+conda activate camel
+# clone github repo
+git clone -b v0.1.0 https://github.com/lightaime/camel.git
+# change directory into project directory
+cd camel
+# install camel from source
+pre-commit install
+pip install -e .
+```
